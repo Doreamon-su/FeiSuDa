@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #ffd001;
 }
 
 .userinfo-avatar {
@@ -13,9 +14,25 @@
 }
 
 .userinfo-nickname {
-  color: #aaa;
+  color: #000;
 }
-
-.usermotto {
-  margin-top: 200px;
+.main{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 30rpx;
+}
+.item{
+  width: 100rpx;
+  font-size: 25rpx;
+  text-align: center;
+  margin: 30rpx;
+}
+.logos{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 20%;
 }

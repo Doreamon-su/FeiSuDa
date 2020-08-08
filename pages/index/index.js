@@ -7,7 +7,11 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    img: [
+      { url: './img/mobike.jpg', text: '美团单车' },
+      { url: './img/hellobike.png', text: '哈啰单车' },
+      { url: './img/didi.jpg', text: '滴滴出行' }]
   },
   //事件处理函数
   bindViewTap: function () {
@@ -51,14 +55,14 @@ Page({
       hasUserInfo: true
     })
   },
-  changeText: function(){
+  changeText: function () {
     wx.scanCode({
-      success (res) {
+      success(res) {
         console.log(res);
-        app.setData({motto: toString(res)})
-        }
+        app.setData({ motto: toString(res) })
+      }
     })
-    
+
   },
-  
+
 })
